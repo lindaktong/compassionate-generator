@@ -91,7 +91,7 @@ const Home: NextPage = () => {
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
           generate a self-compassion related message using chatgpt
         </h1>
-        <p className="text-slate-500 mt-5">47,118 bios generated so far.</p>
+        <p className="text-slate-500 mt-5">hey you, yes you!</p>
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
             <Image
@@ -106,7 +106,6 @@ const Home: NextPage = () => {
               <span className="text-slate-500">
                 (What is on your mind?)
               </span>
-              .
             </p>
           </div>
           <textarea
@@ -131,7 +130,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
               onClick={(e) => generateBio(e)}
             >
-              Generate your bio &rarr;
+              click to hear something encouraging &rarr;
             </button>
           )}
           {loading && (
@@ -157,7 +156,7 @@ const Home: NextPage = () => {
                   className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto"
                   ref={bioRef}
                 >
-                  Your generated bios
+                  here are your pick-me-ups!
                 </h2>
               </div>
               <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
