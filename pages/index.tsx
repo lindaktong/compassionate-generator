@@ -23,12 +23,12 @@ const Home: NextPage = () => {
     }
   };
 
-  const prompt = `Generate 2 ${vibe} twitter biographies with no hashtags and clearly labeled "1." and "2.". ${
+  const prompt = `Generate 2 ${vibe} encouraging statements using self-compassion techniques and clearly labeled "1." and "2.". ${
     vibe === "Funny"
       ? "Make sure there is a joke in there and it's a little ridiculous."
       : null
   }
-      Make sure each generated biography is less than 160 characters, has short sentences that are found in Twitter bios, and base them on this context: ${bio}${
+      Make sure each generated message is less than 160 characters, has short sentences that are easy to read, and base them as a response to this sentiment: ${bio}${
     bio.slice(-1) === "." ? "" : "."
   }`;
 
@@ -89,7 +89,7 @@ const Home: NextPage = () => {
           <p>Star on GitHub</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
-          Generate your next Twitter bio using chatGPT
+          generate a self-compassion related message using chatgpt
         </h1>
         <p className="text-slate-500 mt-5">47,118 bios generated so far.</p>
         <div className="max-w-xl w-full">
@@ -102,9 +102,9 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Copy your current bio{" "}
+              Write a few sentences {" "}
               <span className="text-slate-500">
-                (or write a few sentences about yourself)
+                (What is on your mind?)
               </span>
               .
             </p>
@@ -115,7 +115,7 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g. Senior Developer Advocate @vercel. Tweeting about web development, AI, and React / Next.js. Writing nutlope.substack.com."
+              "e.g. I'm feeling a little tired today."
             }
           />
           <div className="flex mb-5 items-center space-x-3">
