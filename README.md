@@ -1,6 +1,6 @@
-# [TwitterBio.com](https://www.twitterbio.com/)
+# [compassionate-generator.vercel.app](https://compassionate-generator.vercel.app)
 
-This project generates Twitter bios for you using AI.
+This project generates compassionate messages for you using AI.
 
 [![Twitter Bio Generator](./public/screenshot.png)](https://www.twitterbio.com)
 
