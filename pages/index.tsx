@@ -23,14 +23,12 @@ const Home: NextPage = () => {
     }
   };
 
-  const prompt = `Generate 2 ${vibe} encouraging statements using self-compassion techniques and clearly labeled "1." and "2.". ${
-    vibe === "Funny"
+  const prompt = `Generate 2 ${vibe} encouraging statements using self-compassion techniques and clearly labeled "1." and "2.". ${vibe === "Funny"
       ? "Make sure there is a joke in there and it's a little ridiculous."
       : null
-  }
-      Make sure each generated message is less than 160 characters, has short sentences that are easy to read, and base them as a response to this sentiment: ${bio}${
-    bio.slice(-1) === "." ? "" : "."
-  }`;
+    }
+      Make sure each generated message is less than 160 characters, has short sentences that are easy to read, and base them as a response to this sentiment: ${bio}${bio.slice(-1) === "." ? "" : "."
+    }`;
 
   const generateBio = async (e: any) => {
     e.preventDefault();
@@ -79,7 +77,7 @@ const Home: NextPage = () => {
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
-        <a
+        {/* <a
           className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mb-5"
           href="https://github.com/Nutlope/twitterbio"
           target="_blank"
@@ -87,7 +85,7 @@ const Home: NextPage = () => {
         >
           <Github />
           <p>Star on GitHub</p>
-        </a>
+        </a> */}
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
           generate a self-compassion related message using chatgpt
         </h1>
